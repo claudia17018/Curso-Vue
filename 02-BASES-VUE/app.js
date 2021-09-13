@@ -15,6 +15,13 @@ const app = Vue.createApp({
            newQuote: 'Hola',
         }
     },
+    methods: {
+        addQuote(event){
+            this.quotes.unshift({
+                quote: this.newQuote
+            })
+        }
+    }
     
 })
 
